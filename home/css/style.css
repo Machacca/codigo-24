@@ -1,0 +1,500 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el contenedor nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Ajusta según sea necesario */
+    /*background-color: #3498db; /* Color de fondo del nav */
+    /*color: #fff; /* Color del texto */
+}
+
+/* Estilos para el logo */
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Estilos para el lado izquierdo (logo) */
+.nav-left {
+    display: flex;
+    align-items: center;
+    padding-left: 5.8ch;
+}
+
+/* Estilos para el lado derecho (botones) */
+.nav-right {
+    display: flex;
+    align-items: center;
+    padding-right: 5.5ch;
+}
+
+
+/* Estilos para los botones y submenús */
+button, .language, .login {
+    margin-left: 6ch; /* Ajusta según sea necesario */
+    position: relative;
+}
+
+a, .language:hover .submenu,
+.login:hover .submenu {
+    padding: 2.5px;
+    margin-top: 5px; /* Altura de las cajas de menus */
+    text-decoration: none;
+    background-color: #5aa9dd; /* estilo para punteros de menu y sub menu */
+    color: #fff;
+    border-radius: 5px;
+    width: 100px; /* caja tamaño de contenedor de sub menu de NAVAR*/
+    transition: background-color 0.3s ease;
+}
+
+/* Mostrar submenús al pasar el ratón */
+.language:hover .submenu,
+.login:hover .submenu {
+    display: block;
+}
+
+/* Estilos para los íconos */
+img {
+    width: 20px; /* Ajusta según sea necesario */
+    height: 20px; /* Ajusta según sea necesario */
+    margin-right: 5px; /* Ajusta según sea necesario */
+}
+
+/*----------------------------------------------------------*/
+
+/* Estilo de la sección izquierda y derecha de la barra de navegación */
+.left-section, .right-section {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px; /* Ajusta el relleno según tus necesidades */
+}
+
+/*----------------------------------------------------------*/
+
+
+/* Estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.1;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo del header y la barra de navegación */
+/* Estilo del encabezado */
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 1;
+}
+
+/* Estilo de la barra de navegación */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    padding: 0.01px ; /* Añade un relleno para mejorar la apariencia */
+
+    position: relative;
+    z-index: 1000; /* O cualquier número más alto que el z-index de la sección de búsqueda */
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+
+.menu-item {
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Estilo para cada elemento de menú */
+.menu-item, a {
+    margin-right: 0px; /* Puedes ajustar el margen derecho según tus preferencias */
+    padding: 1px;
+}
+
+
+/* Estilos para los submenús */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 1%;
+    background-color: #5aa9dd; /* Color de fondo del submenú */
+    box-shadow: 0 1px 1px rgba(112, 209, 226, 0.1);
+    padding: 1px;
+    border-radius: 10px;
+    width: 240px; /* Para el ancho del sub menu */
+}
+
+.menu-item:hover .submenu {
+    display: block;
+
+}
+
+.submenu a {
+    display: block;
+    color: white;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+    padding: 1px; /* Agregar espacio interno para un aspecto más agradable */
+    border: 1px solid #ccc; /* Añadir borde para resaltar los enlaces */
+    margin-right: 2px; /* Agregar espacio entre los enlaces */
+    /* Otros estilos comunes */
+    width: 230px; /* para el contenedeor de sub menus */
+}
+
+
+
+.submenu a:hover {
+    background-color: #3498db; /* fondo del puntero en el sub menu */
+    /*padding: 3px;*/
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin-left: 3px; /* Distancia y caja de los Menus*/
+    transition: color 0.3s;
+    display: block;
+    padding: 5px; /* para ajustar parrafos*/
+
+    line-height: 1.35;/* para ajustar el espacio de cada palabra */
+}
+
+.navbar a:hover {
+    color: #ddd;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Otros estilos para los enlaces y elementos necesarios */
+a {
+    color: #fff; /* Puedes ajustar el color del texto según tus preferencias */
+    text-decoration: none;
+    
+}
+
+a {
+    display: inline-block;
+    padding: 2.5px;
+    margin-top: 5px; /* Altura de las cajas de menus */
+    text-decoration: none;
+    background-color: #5aa9dd; /* estilo para punteros de menu y sub menu */
+    color: #fff;
+    border-radius: 5px;
+    width: 200px; /* caja tamaño de contenedor de menus*/
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline; /* Cambia el estilo del texto al pasar el ratón sobre el enlace */
+}
+
+/* Estilo de las secciones */
+section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo de la barra de búsqueda */
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+    
+input[type="text"],input[type="date"] {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*<---------------------------------------->*/
+/*<sección con 3 fotos de fondo carrusel con movimiento indefinido>*/
+#busqueda {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+    z-index: 999; /* Ajusta según sea necesario, debe ser menor que el z-index del menú de exploración */
+}
+
+.carrusel {
+    
+    margin-top: 10%;
+    overflow: hidden;
+    white-space: nowrap;
+
+    position: relative; /* o absolute/fixed según necesidades */
+    z-index: 998; /* Ajusta según sea necesario, debe ser menor que el z-index de la barra de navegación y mayor que el de la sección de búsqueda */
+}
+
+.imagen {
+    flex: 0 0 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* Ajusta según tus necesidades */
+.imagen:nth-child(1) {
+    background-image: url('imagen1.jpg');
+}
+
+.imagen:nth-child(2) {
+    background-image: url('imagen2.jpg');
+}
+
+.imagen:nth-child(3) {
+    background-image: url('imagen3.jpg');
+}
+
+/* Estilos adicionales para la respuesta de búsqueda (puedes ajustar según sea necesario) */
+.resultados-busqueda {
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Estilos adicionales para las ofertas especiales o actividades destacadas (puedes ajustar según sea necesario) */
+.ofertas-destacadas {
+    margin-top: 20px;
+    color: #333;
+}
+/*<---------------------------------------->*/
+
+/* Estilo de la sección de iconos */
+.icon-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.icon {
+    text-align: center;
+}
+
+
+/* Estilo general para las secciones */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilos para la sección de recompensas */
+#recompensas {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 10px;
+    text-align: center;
+    margin-top: 0px; /* Altura de las cajas de menus */
+    text-decoration: none;
+    background-color: #3498db; /* estilo para punteros de menu y sub menu */
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    /* ------------- */
+ 
+}
+
+a:hover {
+    background-color: #5aa9dd;
+}
+
+/* Estilo para la sección de Experiencias Exclusivas */
+#exclusivas {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+/* Estilo para el título de la sección */
+#exclusivas h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el párrafo de la sección */
+#exclusivas p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el enlace "Explorar Experiencias" */
+#exclusivas a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Cambio de color al pasar el ratón sobre el enlace */
+#exclusivas a:hover {
+    background-color: #3498db;
+}
+
+
+/* Estilo para la sección de Asesoramiento Personalizado */
+#asesoramiento {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Estilo para el título h2 */
+#asesoramiento h2 {
+    color: #333;
+}
+
+/* Estilo para el párrafo */
+#asesoramiento p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el enlace "Obtener Asesoramiento" */
+#asesoramiento a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+/* Estilo cuando el enlace es hover */
+#asesoramiento a:hover {
+    background-color: #6dbcf2;
+}
+
+/* Recomendacion */
+#recomendacion {
+    background-color: #f8f8f8;
+    padding: 40px;
+    text-align: center;
+}
+
+#recomendacion h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#recomendacion p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#recomendacion div {
+    margin-top: 30px;
+}
+
+#recomendacion a {
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #6dbcf2;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #3498db;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#recomendacion a:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Estilo del footer */
+footer {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+.redes-sociales a {
+    margin: 0 10px; /* Ajusta el margen entre los íconos según sea necesario */
+}
+
+/* Estilo del Copy Right */
+footer p:last-child {
+    margin-top: 10px;
+}

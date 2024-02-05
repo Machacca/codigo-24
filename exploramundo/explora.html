@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup de Submenú - Let'sBook</title>
+    <link rel="stylesheet" href="./css/explora.css"/>
+</head>
+<body>
+
+<header>
+    <!-- Barra de Navegación -->
+    <div class="navbar">
+        <div class="logo">Logo</div>
+        <div class="menu">
+            <div class="menu-item">
+                <span onclick="openPopup()">Explora el mundo</span>
+                <div class="submenu" id="submenu">
+                    <a href="#">Cusco-Machupicchu</a>
+                    <a href="#">Ica</a>
+                    <a href="#">Trujillo</a>
+                    <a href="#">Lima-ciudad de los reyes</a>
+                    <a href="#">Arequipa ciudad blanca</a>
+                    <a href="#">Puno</a>
+                    <a href="#">Cajamarca el baño de los incas</a>
+                    <a href="#">Piura</a>
+                    <a href="#">Iquitos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Popup -->
+<div id="popup" style="display: none;">
+    <div class="submenu">
+        <a href="#">Cusco-Machupicchu</a>
+        <a href="#">Ica</a>
+        <a href="#">Trujillo</a>
+        <a href="#">Lima-ciudad de los reyes</a>
+        <a href="#">Arequipa ciudad blanca</a>
+        <a href="#">Puno</a>
+        <a href="#">Cajamarca el baño de los incas</a>
+        <a href="#">Piura</a>
+        <a href="#">Iquitos</a>
+    </div>
+    <span onclick="closePopup()">Cerrar</span>
+</div>
+
+<script>
+    // Funciones para abrir y cerrar el popup
+    function openPopup() {
+        document.getElementById('popup').style.display = 'block';
+    }
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
