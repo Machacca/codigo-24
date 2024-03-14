@@ -1,0 +1,24 @@
+/*
+body[data-mode="light"] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: $bg-light;
+    color: $text-light;
+}
+
+body[data-mode="dark"] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: $bg-dark;
+    color: $text-dark;
+}
+*/
+body[data-mode=light] {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(31, 255, 162);
+  color: rgb(0, 0, 0);
+}
+
+body[data-mode=dark] {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(22, 52, 151);
+  color: rgb(255, 255, 255);
+}/*# sourceMappingURL=modo.css.map */
